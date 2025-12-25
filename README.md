@@ -73,8 +73,17 @@ http://127.0.0.1:5000/```bash
 ├── DemandForecast.ipynb    # Jupyter notebook for data analysis/modeling
 ├── README.md               # Project documentation (this file)
 └── requirements.txt        # Python dependencies
-.
-```text
 
+##  Dependencies
+Flask
+pandas
+numpy
+plotly
+statsmodels
+reportlab
+xhtml2pdf
+Jinja2
+Werkzeug
+(Ensure to install all dependencies via pip install -r requirements.txt)
 
 
