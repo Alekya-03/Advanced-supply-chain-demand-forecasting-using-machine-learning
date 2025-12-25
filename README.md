@@ -49,11 +49,17 @@ python app.py
 5. Open the application in your browser:
 
 
-http://127.0.0.1:5000/```bash
+http://127.0.0.1:5000/
+---
+
+```md
+```bash
+python app.py
 
 
 6.Open your browser and navigate to http://localhost:5000 to access the ap
 
+---
 
 ## File Structure Overview
 
@@ -85,5 +91,7 @@ xhtml2pdf
 Jinja2
 Werkzeug
 (Ensure to install all dependencies via pip install -r requirements.txt)
+
+This project provides a comprehensive solution for demand forecasting and inventory optimization with an easy-to-use web interface and detailed reporting capabilities.
 
 
