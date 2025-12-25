@@ -1,0 +1,366 @@
+/* Custom styles for Smart Demand Forecast */
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(45deg, #1a237e, #283593) !important;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(45deg, #263238, #37474f) !important;
+}
+
+.bg-gradient-success {
+  background: linear-gradient(45deg, #2e7d32, #388e3c) !important;
+}
+
+/* Enhanced navigation bar */
+.navbar {
+  background: linear-gradient(90deg, #1a237e, #283593) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.navbar-brand i {
+  color: #7986cb;
+}
+
+.nav-link {
+  position: relative;
+  margin: 0 5px;
+  padding: 0.5rem 0.8rem !important;
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #7986cb;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:before {
+  width: 80%;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active:before {
+  width: 80%;
+}
+
+/* Card enhancements */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  font-weight: 600;
+}
+
+/* Button enhancements */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover i {
+  transform: translateX(3px);
+}
+
+/* Dropdown menu enhancements */
+.dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid #3949ab;
+  padding: 0.5rem 0;
+  background-color: #1e2a3a;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  color: #ffffff !important;
+  padding: 0.7rem 1.5rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  position: relative;
+  border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+  background-color: #283593;
+  color: #fff !important;
+  border-left: 3px solid #5c6bc0;
+  transform: translateX(5px);
+}
+
+.dropdown-header {
+  color: #64b5f6 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  padding: 0.7rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Make dropdown items more visible */
+.dropdown-toggle::after {
+  margin-left: 0.5em;
+  vertical-align: 0.15em;
+  content: "";
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0;
+  border-left: 0.4em solid transparent;
+}
+
+/* Add a glow effect to the dropdown when open */
+.dropdown-toggle[aria-expanded="true"] {
+  box-shadow: 0 0 10px rgba(57, 73, 171, 0.8);
+}
+
+/* Chart container enhancements */
+.chart-container {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(26, 35, 126, 0.05);
+}
+
+/* Dashboard metrics */
+.metric-card {
+  border-left: 5px solid;
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+}
+
+.metric-card.primary {
+  border-left-color: #1a237e;
+}
+
+.metric-card.success {
+  border-left-color: #2e7d32;
+}
+
+.metric-card.warning {
+  border-left-color: #f57f17;
+}
+
+.metric-card.danger {
+  border-left-color: #c62828;
+}
+
+/* Form controls */
+.form-control, .form-select {
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #eee;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(26, 35, 126, 0.25);
+  border-color: #3949ab;
+}
+
+/* Animation system */
+.animated {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.slide-in-right {
+  animation-name: slideInRight;
+}
+
+.slide-in-left {
+  animation-name: slideInLeft;
+}
+
+.slide-in-up {
+  animation-name: slideInUp;
+}
+
+.bounce-in {
+  animation-name: bounceIn;
+  animation-duration: 0.8s;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+  from { transform: scale3d(0.3, 0.3, 0.3); opacity: 0; }
+  20% { transform: scale3d(1.1, 1.1, 1.1); }
+  40% { transform: scale3d(0.9, 0.9, 0.9); }
+  60% { transform: scale3d(1.03, 1.03, 1.03); opacity: 1; }
+  80% { transform: scale3d(0.97, 0.97, 0.97); }
+  to { transform: scale3d(1, 1, 1); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Add glowing effect to important actions */
+.btn-glow {
+  animation: glow 2s infinite alternate;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-glow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-glow:hover::after {
+  opacity: 1;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 5px rgba(26, 35, 126, 0.5); }
+  to { box-shadow: 0 0 20px rgba(57, 73, 171, 0.8), 0 0 40px rgba(57, 73, 171, 0.4); }
+}
+
+/* Add animations to specific elements */
+.card-header {
+  animation: fadeIn 0.8s;
+}
+
+.breadcrumb {
+  animation: slideInRight 0.5s;
+}
+
+.navbar-brand {
+  animation: bounceIn 1s;
+}
+
+/* Card staggered loading effect */
+.card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Subtle hover effects */
+.breadcrumb-item a:hover {
+  text-decoration: none;
+  text-shadow: 0 0 8px rgba(57, 73, 171, 0.5);
+}
+
+.badge {
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
