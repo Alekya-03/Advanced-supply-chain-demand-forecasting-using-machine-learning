@@ -22,9 +22,10 @@ Smart Demand Forecast is a Flask-based web application designed for demand forec
 
 git clone <repository-url>
 cd <repository-directory>
+```
 
 2. Create and activate a virtual environment:
-
+```bash
 # Windows
 python -m venv venv
 venv\Scripts\activate
@@ -33,29 +34,37 @@ venv\Scripts\activate
 python3 -m venv venv
 source venv/bin/activate
 
-
+```
 3. Install the required dependencies:
-
+```bash
 
 pip install -r requirements.txt
-
+```
 
 4. Run the Flask application:
-
+```bash
 
 python app.py
-
+```
 
 5. Open the application in your browser:
-
+```bash
 
 http://127.0.0.1:5000/
-
+```
 6.Open your browser and navigate to http://localhost:5000 to access the app
 ---
 
 ```md
 ```
+##Usage Instructions
+
+Home Page: Select a product and forecast horizon to generate demand forecasts.
+Upload Dataset: Upload your own CSV file with columns Date, Product, Demand, and Inventory. The app validates and preprocesses the data.
+Dashboard: View combined forecasts for all products with interactive charts.
+Download Forecasts: Download forecast data as CSV files for individual products or all products.
+Download Reports: Generate and download detailed PDF reports with forecast visualizations and inventory recommendations.
+
 
 
 ## File Structure Overview
@@ -79,7 +88,7 @@ http://127.0.0.1:5000/
 ```
 
 ##  Dependencies
-```bash
+
 Flask
 pandas
 numpy
@@ -90,7 +99,8 @@ xhtml2pdf
 Jinja2
 Werkzeug
 (Ensure to install all dependencies via pip install -r requirements.txt)
-```
+
+##Conclusion
 
 This project provides a comprehensive solution for demand forecasting and inventory optimization with an easy-to-use web interface and detailed reporting capabilities.
 
