@@ -48,6 +48,40 @@ python app.py
 
 http://127.0.0.1:5000/
 
+6.Open your browser and navigate to http://localhost:5000 to access the app.
+
+```bash
+
+## Usage Instructions
+
+- Home Page: Select a product and forecast horizon to generate demand forecasts.
+- Upload Dataset: Upload your own CSV file with columns `Date`, `Product`, `Demand`, and `Inventory`. The app validates and preprocesses the data.
+- Dashboard: View combined forecasts for all products with interactive charts.
+- Download Forecasts: Download forecast data as CSV files for individual products or all products.
+- Download Reports: Generate and download detailed PDF reports with forecast visualizations and inventory recommendations.
+
+---
+
+## File Structure Overview
+
+```text
+.
+├── app.py                  # Main Flask application
+├── forecast.py             # Forecasting logic using SARIMAX
+├── report_generator.py     # PDF report generation utilities
+├── demand_inventory.csv    # Default dataset
+│
+├── templates/              # HTML templates for the web UI
+│
+├── static/                 # Static assets (CSS, JS, images)
+│
+├── attached_assets/        # Additional assets and example files
+│
+├── DemandForecast.ipynb    # Jupyter notebook for data analysis/modeling
+├── README.md               # Project documentation (this file)
+└── requirements.txt        # Python dependencies
+```text
+
 
 
 
