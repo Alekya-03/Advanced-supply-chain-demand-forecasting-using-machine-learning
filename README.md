@@ -49,7 +49,7 @@ python app.py
 http://127.0.0.1:5000/
 
 ##Project Structure Overview
-```
+```text
 
 .
 ├── app.py                  # Main Flask application
