@@ -24,15 +24,10 @@ git clone <repository-url>
 cd <repository-directory>
 ```
 
-2. Create and activate a virtual environment:
+2. Create and activate a Python virtual environment (optional but recommended):
 ```bash
-# Windows
 python -m venv venv
-venv\Scripts\activate
-
-# macOS / Linux
-python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ```
 3. Install the required dependencies:
@@ -41,16 +36,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Run the Flask application:
+4. (Optional) Set the SESSION_SECRET environment variable for Flask session security:
 ```bash
 
 python app.py
 ```
 
-5. Open the application in your browser:
+5. Run the Flask application:
 ```bash
 
-http://127.0.0.1:5000/
+python app.py
 ```
 6.Open your browser and navigate to http://localhost:5000 to access the app
 
