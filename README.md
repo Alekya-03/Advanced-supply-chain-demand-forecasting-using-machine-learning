@@ -49,7 +49,7 @@ python app.py
 http://127.0.0.1:5000/
 
 ##Project Structure Overview
-(```)
+```
 
 .
 ├── app.py                  # Main Flask application
@@ -62,6 +62,6 @@ http://127.0.0.1:5000/
 ├── DemandForecast.ipynb    # Jupyter notebook for data analysis/modeling
 ├── README.md               # Project documentation (this file)
 └── requirements.txt        # Python dependencies
-(```)
+```
 
 
