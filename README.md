@@ -55,14 +55,12 @@ http://127.0.0.1:5000/
 6.Open your browser and navigate to http://localhost:5000 to access the app
 
 ## Usage Instructions
-```bash
-Home Page: Select a product and forecast horizon to generate demand forecasts.
-Upload Dataset: Upload your own CSV file with columns Date, Product, Demand, and Inventory. The app validates and preprocesses the data.
-Dashboard: View combined forecasts for all products with interactive charts.
-Download Forecasts: Download forecast data as CSV files for individual products or all products.
-Download Reports: Generate and download detailed PDF reports with forecast visualizations and inventory recommendations.
+- **Home Page:** Select a product and forecast horizon to generate demand forecasts.
+- **Upload Dataset:** Upload your own CSV file with columns `Date`, `Product`, `Demand`, and `Inventory`. The app validates and preprocesses the data.
+- **Dashboard:** View combined forecasts for all products with interactive charts.
+- **Download Forecasts:** Download forecast data as CSV files for individual products or all products.
+- **Download Reports:** Generate and download detailed PDF reports with forecast visualizations and inventory recommendations.
 
-```
 
 ## File Structure Overview
 
@@ -86,15 +84,16 @@ Download Reports: Generate and download detailed PDF reports with forecast visua
 
 ##  Dependencies
 
-Flask
-pandas
-numpy
-plotly
-statsmodels
-reportlab
-xhtml2pdf
-Jinja2
-Werkzeug
+- Flask
+- pandas
+- numpy
+- plotly
+- statsmodels
+- reportlab
+- xhtml2pdf
+- Jinja2
+- Werkzeug
+
 (Ensure to install all dependencies via pip install -r requirements.txt)
 
 ## Conclusion
