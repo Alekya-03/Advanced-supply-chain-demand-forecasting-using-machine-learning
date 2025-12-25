@@ -48,9 +48,10 @@ python app.py
 
 http://127.0.0.1:5000/
 
-##Project Structure Overview
-```text
+## 📁 Project Structure Overview
 
+```text
+.
 .
 ├── app.py                  # Main Flask application
 ├── forecast.py             # Forecasting logic using SARIMAX
@@ -62,6 +63,6 @@ http://127.0.0.1:5000/
 ├── DemandForecast.ipynb    # Jupyter notebook for data analysis/modeling
 ├── README.md               # Project documentation (this file)
 └── requirements.txt        # Python dependencies
-```
+
 
 
