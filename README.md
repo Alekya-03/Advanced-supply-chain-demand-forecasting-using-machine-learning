@@ -22,3 +22,45 @@ Smart Demand Forecast is a Flask-based web application designed for demand forec
 ```bash
 git clone <repository-url>
 cd <repository-directory>
+
+2. Create and activate a virtual environment:
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+
+
+3. Install the required dependencies:
+
+pip install -r requirements.txt
+
+
+4. Run the Flask application:
+
+python app.py
+
+
+5. Open the application in your browser:
+
+http://127.0.0.1:5000/
+
+##Project Structure Overview
+
+
+.
+├── app.py                  # Main Flask application
+├── forecast.py             # Forecasting logic using SARIMAX
+├── report_generator.py     # PDF report generation utilities
+├── demand_inventory.csv    # Default dataset
+├── templates/              # HTML templates for the web UI
+├── static/                 # Static assets (CSS, JS, images)
+├── attached_assets/        # Additional assets and example files
+├── DemandForecast.ipynb    # Jupyter notebook for data analysis/modeling
+├── README.md               # Project documentation (this file)
+└── requirements.txt        # Python dependencies
+
+
