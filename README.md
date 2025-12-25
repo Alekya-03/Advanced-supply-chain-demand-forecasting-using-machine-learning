@@ -53,7 +53,7 @@ http://127.0.0.1:5000/
 ```bash
 
 ## Usage Instructions
-
+---
 - Home Page: Select a product and forecast horizon to generate demand forecasts.
 - Upload Dataset: Upload your own CSV file with columns `Date`, `Product`, `Demand`, and `Inventory`. The app validates and preprocesses the data.
 - Dashboard: View combined forecasts for all products with interactive charts.
